@@ -1,0 +1,14 @@
+
+.fanhui{
+	width: 1300px;
+	height: 50px;
+	margin: 50px auto;
+	border: 1px solid #1d5ba6;
+	line-height: 50px;
+	padding-left: 10px;
+	background-color:#f0f0f0;
+}
+.fanhui p{
+	display:inline;
+	font-size: 20px;
+}

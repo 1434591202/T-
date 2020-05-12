@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/lcon-css/guanbi/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/train.css">
+	<link rel="stylesheet" type="text/css" href="css/lcon-css/mima/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/lcon-css/dianhua/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/min.css">
+	<link rel="stylesheet" type="text/css" href="css/max.css">
+	<script type="text/javascript" src="jquery/jquery3.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/onc.js"></script>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>天使之家</title>
+		<meta name="description" content="Blueprint: On Scroll Effect Layout" />
+		<meta name="keywords" content="on scroll, effect, slide in, layout, template, transition, javascript" />
+		<link rel="stylesheet" type="text/css" href="css3/xiangying/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css3/xiangying/css/component.css" />
+		<script src="css3/xiangying/js/modernizr.custom.js"></script>
+</head>
+<body>
+	
+		
+
+	<!--导航条-->
+	<nav class="navbar navbar-default navbar-fixed-top nav-top-box" role="navigation" style="height:50px;">
+		<div class="container-fluid" style="position: relative;">
+
+			<div class="navbar-header" style="position: absolute; left:10%;">
+				<div class="logo">
+					<div class="logo-image"></div>
+				</div>
+			</div>
+
+			<div style="position: absolute; right:10%;">
+				<ul class="nav navbar-nav hedr-ul" id="head_ul">
+					<li><a href="nurse.html">首页</a></li>
+					<li><a href="app.html" >APP下载</a></li>
+					<li><a href="paoject.html">平台规划</a></li>
+					<li class="head-a"><a href="train.html">培训联系</a></li>
+					<li><a href="team.html">关于我们</a></li>
+					<li id="log" class="denglu-btn">登陆/注册</li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+	
+	
+	<div class="container" style="width:80%;margin-bottom:0;">	
+			<div id="cbp-so-scroller" class="cbp-so-scroller" style="margin-bottom:0;">
+				<section class="cbp-so-section">
+					<article class="cbp-so-side cbp-so-side-left">
+						<h2>天使之家</h2>
+						<p>白衣守护平台不只是一款护士兼职、患者预约护士上门诊断的APP。还是一个高级月嫂，顶级保姆的培训机构。</p>
+						
+					</article>
+					<figure class="cbp-so-side cbp-so-side-right">
+						<img src="images/peixun/1.jpg" alt="img01">
+					</figure>
+				</section>
+				<section class="cbp-so-section">
+					<figure class="cbp-so-side cbp-so-side-left">
+						<img src="images/peixun/2.jpg" alt="img01">
+					</figure>
+					<article class="cbp-so-side cbp-so-side-right">
+						<h2>培训环境</h2>
+						<p>培训教师都是在这些行业领域内有着多年经验的领航人，提供就业保证，免费入学。</p>
+					</article>
+				</section>
+				<section class="cbp-so-section" style="margin-bottom:0;">
+					<article class="cbp-so-side cbp-so-side-left">
+						<h2>联系我们</h2>
+						<p>如何你对我们的培训感兴趣，而你刚好是一个准备转型的护士行业的出色人员，请联系我们</p>	
+						<p>客服：15778702339</p>	
+					</article>
+					<figure class="cbp-so-side cbp-so-side-right">
+						<img src="images/peixun/3.gif" alt="img01">
+					</figure>
+				</section>
+			</div>
+		</div>
+		<script src="css3/xiangying/js/classie.js"></script>
+		<script src="css3/xiangying/js/cbpScroller.js"></script>
+		<script>
+			new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+		</script>
+
+
+
+
+
+	<!--登陆弹窗墓-->
+	<div class="log-bg">	
+	</div>
+	<!--登陆弹窗-->
+	<div class="log-box">
+		<div class="log-top">
+			<div class="inco-box">
+				<i class="iconfont icon-guanbi" style="	cursor: pointer;z-index:1000;">&#xe7f5;</i>
+			</div>
+			<div class="log-logo"></div>
+			<p style="left:65px;cursor:pointer; z-index:10000" id="account_login">账号登陆</p>
+			<p style="right:65px;cursor:pointer;  z-index:10000" id="Land_safely">安全登陆</p>
+			<div class="log-top-left log-solid"></div>
+			<div class="log-top-right"></div>	
+		</div>
+
+		<!--账号登陆-->
+		<div class="log-bottom">
+			<div class="input-group">
+			<span class="input-group-addon">
+			<i class="iconfont inco-text">&#xe60d;</i></span>
+			<input type="text" class="form-control" placeholder="输入手机号码/用户名/账号 ">
+			</div><br>
+
+			<div class="input-group">
+			<span class="input-group-addon">
+			<i class="iconfont inco-text">&#xe7b8;</i></span>
+			<input type="text" class="form-control" placeholder="输入密码 ">
+			</div><br>
+			<div>
+				<input type="checkbox" style="float:left">
+				<p style="display:inline;">记住密码</p>
+				<a href="">
+					<p style="display:inline; float:right;">忘记密码</p>
+				</a>			
+			</div><br>
+
+			<a href="">
+				<button type="button" class="btn btn-primary" style="background-color:#57819f; margin-left:15px; margin-top:10px;">立即注册</button>
+			</a>
+			<button type="button" class="btn btn-primary"  id="denglu" style="background-color:#57819f; margin-left:40px; margin-top:10px;">点击登陆</button>
+		</div>
+
+		<!--安全登陆-->
+		<div class="log-erwei">
+			<div class="log-image">
+				<div class="log-image-box"></div>
+			</div>
+			<div style="margin-top:30px; padding:0 45px;">
+				<a href="">
+					<p style="display:inline;">记住密码</p>
+				</a>
+				<a href="">	
+					<p style="display:inline; float:right;">忘记密码</p>
+				</a>			
+			</div>			
+		</div>
+	
+
+	</div>
+
+		
+		
+	<!--页脚-->
+	<div class="page" style="margin-top:100px;">
+		<div class="footer" style="padding-top:20px;">
+			<div class="row">
+				<div class="col-md-9">
+					<h4>商务合作</h4>
+						<div class="row">
+							<div class="col-md-6">
+								<p>邮箱：1434591202@qq.com</p>
+							</div>
+							<div class="col-md-6">
+								<p>联系方式:15778702339</p>
+							</div>
+						</div>
+				</div>
+				<div class="col-md-3">
+					<h4>服务热线</h4>
+					<p style="font-size:30px;">54646465147</p>
+				</div>
+				<p style="margin-left:300px;">公司初始地址：广西省柳州市鱼峰区社弯路28号（柳州职业技术学院）</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,45 @@
+.hexin{
+	width: 980px;
+	height: 50px;
+	margin: 100px auto 0;
+	padding-left: 400px; 
+}
+.xiantiao{
+	width:100%;
+	border-bottom: 0.35em solid #1d5ba6;
+	position: absolute;
+	top:138px;
+}
+.chajian-box{
+	width: 100%;
+	height: 450px;
+	position: absolute;
+	background-color: #aeaaaa;
+	top:140px;
+	opacity: 0.1;
+}
+.team-img{
+	width: 100%;
+	height:128px;
+	background-image: url(../images/lanxin.jpg);
+	background-size: 100% 130px;
+	position: absolute;
+	top: 10px;
+	opacity: 0.8;
+}
+.liuzhi{
+	width: 400px;
+	height: 300px;
+	background-image: url("../images/liuzhi.jpg");
+	background-size: 400px 300px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-left: 130px;
+}
+.liuzhi-p{
+	width: 500px;
+	height: 300px;
+	float: right;
+	margin-right: 50px;
+	margin-top: 3em;
+}

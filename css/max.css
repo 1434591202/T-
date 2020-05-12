@@ -1,0 +1,260 @@
+a:hover{
+	text-decoration: none;
+}
+body{
+	background-color: #f8f8f8;
+}
+h1{
+	color: #1d5ba6;
+}
+.logo{
+	width:100px;
+	height:50px;
+	padding-left: 20px; 
+}
+.logo-image{
+	width: 100%;
+	height: 100%;
+	margin-top:5px;
+	background-image: url("../images/logo/logo2.png");
+	background-repeat: no-repeat;
+}
+.nav-top-box{
+	 background-color:#1d5ba6;
+}
+#head_ul a{
+	color: #fff;
+	z-index: 10px;
+}
+#head_ul a:hover{
+	background-color: #000;
+	opacity: 0.4;
+	color: #fbfeb3;
+}
+.denglu-btn{
+	margin-left:40px; 
+	margin-top:10px;
+	cursor: pointer;
+	color:#fff;
+	font-size: 13px;
+
+}
+.head-a{
+	background-color: #000;
+	opacity: 0.4;
+	color: #fbfeb3;
+}
+
+.log-bg{
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.2;
+	z-index: 2000;
+	display: none;
+}
+.log-box{
+	width: 400px;
+	height: 430px;
+	background-color: #fff;
+	position: fixed;
+	top: 17%;
+	left: 36%;	
+	z-index: 2001;
+	display: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.log-top{
+	width: 400px;
+	height: 150px;
+	border-bottom: #e3e3e3 solid 1px;
+	position: relative;
+}
+.log-logo{
+	width: 90px;
+	height: 84px;
+	background-image: url("../images/logo/logo.png");
+	background-size: 90px 84px;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 150px;
+	top: 20px;
+}
+.log-top p{
+	position: absolute;
+	top: 115px;
+	font-size: 18px;
+}
+.log-top-left{
+	position: absolute;
+	left: 0;
+}
+.log-top-right{
+	position: absolute;
+	right: 0;
+}
+.log-solid{
+	top: 50px;
+	width: 200px;
+	height: 100px;
+	border-bottom:#f2c855 solid 3px;
+	z-index: 20;
+}
+.inco-box{
+	float: right;
+	margin-right: 10px;
+	cursor: default;
+}
+.icon-guanbi{
+	font-size: 40px;
+	color: #aeb2b4;
+}
+.log-bottom{
+	width: 240px;
+	height: 320px;
+	margin:40px auto 0;
+}
+.inco-text{
+	font-size: 15px;
+}
+.log-erwei{
+	width: 240px;
+	height: 320px;
+	margin:40px auto 0; 
+	display: none;
+}
+.log-image{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+}
+.log-image-box{
+	width: 100%;
+	height:100%;
+	background-image: url("../images/erweima.jpg");
+}
+.carousel{
+	width: 1500px;
+	height: 500px;
+	background-image: url("../images/nurse1.jpg");
+	background-repeat: no-repeat;
+	margin:0 auto;	
+}
+.service-ion{
+	width: 1100px;
+	height: 300px;
+	margin: 50px auto;
+	position: relative;
+	opacity: 0.8;
+}
+.service-ion li{
+	list-style: none;
+	width: 200px;
+	height: 250px;
+	background-color: #fff;
+	float: left;
+	margin: 40px 30px;
+	position: relative;
+}
+.service-ion img{
+	width: 100%;
+	height: 70%;
+	margin-bottom: 5px;
+}
+.p-box{
+	padding-left: 20px;
+}
+.service-ion a{
+	color: #000;
+}
+.service-ion a:hover{
+	color: #72aed8;
+}
+.service-no{
+	display: none;
+}
+.service-btn{
+	width: 300px;
+	height: 60px;
+	background-color:#57819f;
+	position: absolute;
+	top: 400px;
+	left:400px;
+	font-size: 28px;
+	line-height: 40px;
+	border-radius: 8px; 
+	margin: 0 auto;
+	color: #fff;
+}
+.pack{
+	width: 300px;
+	height: 60px;
+	background-color:#57819f;
+	position: absolute;
+	top: 1100px;
+	left: 400px;
+	font-size: 28px;
+	line-height: 40px;
+	border-radius: 8px; 
+	margin: 0 auto;
+	display: none;
+	color: #fff;
+}  
+.fuwu-a{
+	width: 200px;
+	height: 50px;
+	border: 1.5px solid #1d5ba6;
+	line-height: 50px;
+	margin: 30px auto 60px;
+	font-size: 23px;
+	padding-left: 55px;
+}
+.fuwu-a:hover{
+	background: #1d5ba6;;
+}
+.fuwu-a p{
+	color: #1d5ba6;
+}
+.fuwu-a:hover p{
+	color: #fff;	
+}
+.page{
+	width: 100%;
+	height: 150px;
+	background-color: #fff;
+	margin-top: 250px;
+}
+.footer{
+	height: 150px;
+	width:980px;
+	margin:0 auto;
+}
+.footer h4,p{
+	color: #9c9d9d;
+}
+.zixun{
+	width: 980px;
+	height: 500px;
+	margin:0 auto;
+}
+.zixun-box{
+	width: 980px;
+	height: 350px;
+	margin: 40px auto;
+	border-bottom:#1d5ba6 solid 2px;
+	position: relative; 
+}
+.zixun-box p{
+	color: #000;
+}
+.zixun-box a{
+	cursor: pointer;
+}
+.htmleaf-container p{
+	color: #fff;
+	font-size: 25px;
+}

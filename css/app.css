@@ -1,0 +1,22 @@
+.app-banner{
+	width: 1500px;
+	height: 700px;
+	background-image: url("../images/app.jpg");
+	background-repeat: no-repeat;
+	margin:0 auto;
+	position:relative;	
+}
+.app-box{
+	width:600px;
+	height: 400px;
+	position: absolute;
+	background-image: url("../images/xiazai.gif");
+	top: 50px;
+	left: 50px;
+}
+.page-app{
+	width: 100%;
+	height: 150px;
+	background-color: #fff;
+}
+

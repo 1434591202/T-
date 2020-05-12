@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS3鼠标HOVER图片悬停方向感知特效|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<style type="text/css">
+		/* The magic */
+		.col {
+		  overflow: hidden;
+		  position: relative;
+		}
+
+		.slide {
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		  /* 
+		    Visibility delay gives the previously hovered element time to slide out before disappearing.
+		    Remove the `visibility` transition to slide in current element without sliding out previous element
+		  */
+		  -webkit-transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+		  transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+		  visibility: hidden;
+		  will-change: transform;
+		  -webkit-transform: translateY(100%);
+		          transform: translateY(100%);
+		}
+
+		.row:hover ~ .row .slide {
+		  -webkit-transform: translateY(-100%);
+		          transform: translateY(-100%);
+		}
+		.row:hover .slide {
+		  -webkit-transform: translateX(100%);
+		          transform: translateX(100%);
+		}
+		.row:hover .col:hover ~ .col .slide {
+		  -webkit-transform: translateX(-100%);
+		          transform: translateX(-100%);
+		}
+		.row:hover .col:hover .slide {
+		  -webkit-transform: none;
+		          transform: none;
+		  visibility: visible;
+		  -webkit-transition-delay: 0s;
+		          transition-delay: 0s;
+		}
+
+		/* Pen styling */
+		* {
+		  box-sizing: border-box;
+		}
+
+		/*body {
+		  background: #fefefe;
+		  color: #333;
+		  font: 14px /1.5 "Fira Sans", sans-serif;
+		}
+
+		h1 {
+		  font-size: 2.5rem;
+		  font-weight: 300;
+		  margin: 1.5em 0.5rem 1em;
+		  text-align: center;
+		}*/
+
+		.container {
+		  margin: 0 auto;
+		  padding: 2rem;
+		  max-width: 1200px;
+		}
+
+		.row {
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		}
+
+		.col {
+		  color: #fff;
+		  -webkit-box-flex: 1;
+		      -ms-flex: 1 1 auto;
+		          flex: 1 1 auto;
+		  min-height: 260px;
+		  position: relative;
+		}
+		.col h2 {
+		  font-weight: 300;
+		  font-size: 1.33333rem;
+		  line-height: 1.25;
+		  margin: 0;
+		  position: absolute;
+		  bottom: 1.5rem;
+		  right: 1.5rem;
+		  z-index: 0;
+		}
+
+		.col:nth-child(2) {
+		  min-width: 20%;
+		}
+
+		.col:nth-child(4) {
+		  min-width: 33%;
+		}
+
+		.col:nth-child(3) + .col:nth-child(3) {
+		  min-width: 50%;
+		}
+
+		.photo-container {
+		  background: #0f0523 50% 50% / cover;
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		  -webkit-transition: 1s;
+		  transition: 1s;
+		  -webkit-transform-origin: bottom right;
+		          transform-origin: bottom right;
+		}
+		.photo-container::before {
+		  background: -webkit-linear-gradient(transparent, rgba(67, 17, 51, 0.5), #000320);
+		  background: linear-gradient(transparent, rgba(67, 17, 51, 0.5), #000320);
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		}
+		.col:hover .photo-container {
+		  -webkit-transform: scale(1.25);
+		          transform: scale(1.25);
+		}
+
+		.slide {
+		  background: rgba(25, 1, 21, 0.8);
+		  padding: 0 1.5rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>CSS3鼠标HOVER图片悬停方向感知特效</h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/css3/css3donghua/201705124507.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+		</header>
+		<div class="container">
+		  <div class="row">
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/1.jpg)"></div>
+		      <h2>图片一 </h2>
+		      <div class="slide">
+		        <p>Facere illo pariatur necessitatibus fugit quo impedit, quae, corporis placeat recusandae dolor ipsa nobis!</p>
+		      </div>
+		    </div>
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/2.jpg)"></div>
+		      <h2>图片二 </h2>
+		      <div class="slide">
+		        <p>Quam molestiae ipsa sapiente mollitia, nobis.</p>
+		      </div>
+		    </div>
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/3.jpg)"></div>
+		      <h2>图片三 </h2>
+		      <div class="slide">
+		        <p>Autem possimus perspiciatis, eaque quos repudiandae modi labore sed repellat dolorum magnam praesentium expedita esse tempore saepe nulla.</p>
+		      </div>
+		    </div>
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/4.jpg)"></div>
+		      <h2>图片四 </h2>
+		      <div class="slide">
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/5.jpg)"></div>
+		      <h2>图片五 </h2>
+		      <div class="slide">
+		        <p>Veritatis eos similique eveniet tempora.</p>
+		      </div>
+		    </div>
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/6.jpg)"></div>
+		      <h2>图片六 </h2>
+		      <div class="slide">
+		        <p>Doloremque quisquam molestias, est laudantium vero aliquid dolorum inventore atque sint perferendis qui dolor voluptas consequuntur non.</p>
+		      </div>
+		    </div>
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/7.jpg)"></div>
+		      <h2>图片七 </h2>
+		      <div class="slide">
+		        <p>Facere illo pariatur necessitatibus fugit quo impedit, quae, corporis placeat recusandae dolor ipsa nobis!</p>
+		      </div>
+		    </div>
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/8.jpg)"></div>
+		      <h2>图片八 </h2>
+		      <div class="slide">
+		        <p>Quam molestiae ipsa sapiente mollitia, nobis.</p>
+		      </div>
+		    </div>
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/9.jpg)"></div>
+		      <h2>图片九 </h2>
+		      <div class="slide">
+		        <p>Autem possimus perspiciatis, eaque quos repudiandae modi labore sed repellat dolorum magnam praesentium expedita esse tempore saepe nulla.</p>
+		      </div>
+		    </div>
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/10.jpg)"></div>
+		      <h2>图片十 </h2>
+		      <div class="slide">
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/11.jpg)"></div>
+		      <h2>图片十一 </h2>
+		      <div class="slide">
+		        <p>Autem possimus perspiciatis, eaque quos repudiandae modi labore sed repellat dolorum magnam praesentium expedita esse tempore saepe nulla.</p>
+		      </div>
+		    </div>
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/12.jpg)"></div>
+		      <h2>图片十二 </h2>
+		      <div class="slide">
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col">
+		      <div class="photo-container" style="background-image:url(img/13.jpg)"></div>
+		      <h2>图片十三 </h2>
+		      <div class="slide">
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    <a href="http://www.htmleaf.com/html5/SVG/201702204361.html">
+			  <img src="related/1.jpg" width="300" alt="带方向感知的3d立方体动画特效"/>
+			  <h3>带方向感知的3d立方体动画特效</h3>
+			</a>
+			<a href="http://www.htmleaf.com/css3/css3donghua/201601183034.html">
+			  <img src="related/2.jpg" width="300" alt="炫酷带方向感应的鼠标滑过图片3D动画特效"/>
+			  <h3>炫酷带方向感应的鼠标滑过图片3D动画特效</h3>
+			</a>
+		</div>
+	</div>
+	
+</body>
+</html>

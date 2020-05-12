@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css3/xuanxianka/css/htmleaf-demo.css">
+	<link rel="stylesheet" type="text/css" href="css3/xuanxianka/css/xuanxiangka.css">
+	<link rel="stylesheet" type="text/css" href="css3/tuandui/css/tuandui.css">
+	<link rel="stylesheet" type="text/css" href="css3/tuandui/css/htmleaf-demo.css">
+	<link rel="stylesheet" type="text/css" href="css/lcon-css/shouji/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/lcon-css/qq/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/lcon-css/guanbi/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="css/lcon-css/mima/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/lcon-css/dianhua/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/team.css">
+	<link rel="stylesheet" type="text/css" href="css/min.css">
+	<link rel="stylesheet" type="text/css" href="css/max.css">
+	<script type="text/javascript" src="jquery/jquery3.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/onc.js"></script>
+	<title>天使之家</title>
+</head>
+<body>
+	
+		
+
+	<!--导航条-->
+	<nav class="navbar navbar-default navbar-fixed-top nav-top-box" role="navigation" style="height:50px;">
+		<div class="container-fluid" style="position: relative;">
+
+			<div class="navbar-header" style="position: absolute; left:10%;">
+				<div class="logo">
+					<div class="logo-image"></div>
+				</div>
+			</div>
+
+			<div style="position: absolute; right:10%;">
+				<ul class="nav navbar-nav hedr-ul" id="head_ul">
+					<li><a href="nurse.html">首页</a></li>
+					<li><a href="app.html" >APP下载</a></li>
+					<li><a href="paoject.html">平台规划</a></li>
+					<li><a href="train.html">培训联系</a></li>
+					<li class="head-a"><a href="team.html">关于我们</a></li>
+					<li id="log" class="denglu-btn">登陆/注册</li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<!--头部图-->
+	<div class="team-img"></div>
+
+	
+
+	<!--登陆弹窗墓-->
+	<div class="log-bg">	
+	</div>
+	<!--登陆弹窗-->
+	<div class="log-box">
+		<div class="log-top">
+			<div class="inco-box">
+				<i class="iconfont icon-guanbi" style="	cursor: pointer;z-index:10000;">&#xe7f5;</i>
+			</div>
+			<div class="log-logo"></div>
+			<p style="left:65px;cursor:pointer; z-index:1000" id="account_login">账号登陆</p>
+			<p style="right:65px;cursor:pointer;  z-index:1001" id="Land_safely">安全登陆</p>
+			<div class="log-top-left log-solid"></div>
+			<div class="log-top-right"></div>	
+		</div>
+
+		<!--账号登陆-->
+	<div class="log-bottom">
+			<div class="input-group">
+			<span class="input-group-addon">
+			<i class="iconfont inco-text">&#xe60d;</i></span>
+			<input type="text" class="form-control" placeholder="输入手机号码/用户名/账号 ">
+			</div><br>
+
+			<div class="input-group">
+			<span class="input-group-addon">
+			<i class="iconfont inco-text">&#xe7b8;</i></span>
+			<input type="text" class="form-control" placeholder="输入密码 ">
+			</div><br>
+			<div>
+				<input type="checkbox" style="float:left">
+				<p style="display:inline;">记住密码</p>
+				<a href="">
+					<p style="display:inline; float:right;">忘记密码</p>
+				</a>			
+			</div><br>
+
+			<a href="">
+				<button type="button" class="btn btn-primary" style="background-color:#57819f; margin-left:15px; margin-top:10px;">立即注册</button>
+			</a>
+			<button type="button" class="btn btn-primary"  id="denglu" style="background-color:#57819f; margin-left:40px; margin-top:10px;">点击登陆</button>
+	</div>
+
+		<!--安全登陆-->
+		<div class="log-erwei">
+			<div class="log-image">
+				<div class="log-image-box"></div>
+			</div>
+			<div style="margin-top:30px; padding:0 45px;">
+				<a href="">
+					<p style="display:inline;">注册</p>
+				</a>
+				<a href="">	
+					<p style="display:inline; float:right;">忘记密码</p>
+				</a>			
+			</div>			
+		</div>
+	
+	</div>
+	
+	<div class="xiantiao"></div>
+	<div class="chajian-box"></div>
+	
+	<!--选项卡插件-->
+		<div class="container" style="margin-top:100px;margin-bottom:350px;position:relative;">
+			
+	            <div class="row">
+	                <div class="col-md-offset-1 col-md-10">
+	                    <div class="tab" role="tabpanel">
+	                        <!-- Nav tabs -->
+	                        <ul class="nav nav-tabs" role="tablist">
+	                            <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-home"></i><span>核心人员</span></a></li>
+	                            <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-globe"></i><span>起源</span></a></li>
+	                        </ul>
+	                        <!-- Tab panes -->
+	                        <div class="tab-content tabs">
+	                            <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+	                                <h3>团队介绍</h3>
+	                                <p style="position:relative;"><!--团队成员-->
+										
+										<div class="demo" style="position:absolute; top:100px;left:-100px;">
+									        <div class="container">
+									            <div class="row" style="width:1400px;">
+									                <div class="col-md-2 col-sm-6">
+									                    <div class="our-team">
+									                        <div class="pic">
+									                            <img src="css3/tuandui/images/2.jpg">
+									                        </div>
+									                        <div class="team-content">
+									                            <h3 class="title">团队负责人</h3>
+									                            <Span class="post">罗华虎</Span>
+									                        </div>
+									                        <ul class="social">
+									                            <li>
+									                            	<a href="#" class="fa">
+									                            		<i class="iconfont inco-text">&#xe617;</i>
+									                            	</a>
+									                            </li>
+									                            <li>
+									                           		<a href="#" class="fa">
+									                           			<i class="iconfont inco-text">&#xe68c;</i>
+									                            	</a>
+									                            </li>
+									                            <li><a href="#" class="fa fa-google-plus"></a></li>
+									                            <li><a href="#" class="fa fa-linkedin"></a></li>
+									                        </ul>
+									                    </div>
+									                </div>
+
+									                <div class="col-md-2 col-sm-6">
+									                    <div class="our-team">
+									                        <div class="pic">
+									                            <img src="css3/tuandui/images/3.jpg">
+									                        </div>
+									                        <div class="team-content">
+									                            <h3 class="title">图片处理</h3>
+									                            <Span class="post">黄春燕</Span>
+									                        </div>
+									                        <ul class="social">
+									                            <li>
+									                            	<a href="#" class="fa">
+									                            		<i class="iconfont inco-text">&#xe617;</i>
+									                            	</a>
+									                            </li>
+									                            <li>
+									                           		<a href="#" class="fa">
+									                           			<i class="iconfont inco-text">&#xe68c;</i>
+									                            	</a>
+									                            </li>
+									                            <li><a href="#" class="fa fa-google-plus"></a></li>
+									                            <li><a href="#" class="fa fa-linkedin"></a></li>
+									                        </ul>
+									                    </div>
+									                </div>
+									                <div class="col-md-2 col-sm-6">
+									                    <div class="our-team">
+									                        <div class="pic">
+									                            <img src="css3/tuandui/images/5.jpg">
+									                        </div>
+									                        <div class="team-content">
+									                            <h3 class="title">技术人员</h3>
+									                            <Span class="post">罗康红</Span>
+									                        </div>
+									                        <ul class="social">
+									                            <li>
+									                            	<a href="#" class="fa">
+									                            		<i class="iconfont inco-text">&#xe617;</i>
+									                            	</a>
+									                            </li>
+									                            <li>
+									                           		<a href="#" class="fa">
+									                           			<i class="iconfont inco-text">&#xe68c;</i>
+									                            	</a>
+									                            </li>
+									                            <li><a href="#" class="fa fa-google-plus"></a></li>
+									                            <li><a href="#" class="fa fa-linkedin"></a></li>
+									                        </ul>
+									                    </div>
+									                </div>
+									                <div class="col-md-2 col-sm-6">
+									                    <div class="our-team">
+									                        <div class="pic">
+									                            <img src="css3/tuandui/images/4.jpg">
+									                        </div>
+									                        <div class="team-content">
+									                            <h3 class="title">创意执行</h3>
+									                            <Span class="post">莫新婷</Span>
+									                        </div>
+									                        <ul class="social">
+									                            <li>
+									                            	<a href="#" class="fa">
+									                            		<i class="iconfont inco-text">&#xe617;</i>
+									                            	</a>
+									                            </li>
+									                            <li>
+									                           		<a href="#" class="fa">
+									                           			<i class="iconfont inco-text">&#xe68c;</i>
+									                            	</a>
+									                            </li>
+									                            <li><a href="#" class="fa fa-google-plus"></a></li>
+									                            <li><a href="#" class="fa fa-linkedin"></a></li>
+									                        </ul>
+									                    </div>
+									                </div>
+									                <div class="col-md-2 col-sm-6">
+									                    <div class="our-team">
+									                        <div class="pic">
+									                            <img src="css3/tuandui/images/1.jpg">
+									                        </div>
+									                        <div class="team-content">
+									                            <h3 class="title">团队核心</h3>
+									                            <Span class="post">粱杨秋</Span>
+									                        </div>
+									                        <ul class="social">
+									                            <li>
+									                            	<a href="#" class="fa">
+									                            		<i class="iconfont inco-text">&#xe617;</i>
+									                            	</a>
+									                            </li>
+									                            <li>
+									                           		<a href="#" class="fa">
+									                           			<i class="iconfont inco-text">&#xe68c;</i>
+									                            	</a>
+									                            </li>
+									                            <li><a href="#" class="fa fa-google-plus"></a></li>
+									                            <li><a href="#" class="fa fa-linkedin"></a></li>
+									                        </ul>
+									                    </div>
+									                </div>
+
+									            </div>
+									        </div>
+										</div>
+									</p>
+	                            </div>
+	                            <div role="tabpanel" class="tab-pane fade" id="Section2">
+	                                <h3>团队起源</h3>
+	                                  <p style="position:relative;">
+										
+										<div class="demo" style="position:absolute; top:100px;left:-100px;">
+									        <div class="container">
+									           <div class="liuzhi"></div>
+									           <div class="liuzhi-p">
+													<h3 style="text-align:center ">团队起源地</h3>
+													<p style="text-indent:2em">天使之家团队的核心创始人是由柳州职业技术的五名在校生组建而成，其初始基地坐落于广西省柳州市鱼峰区社弯路28号。白衣守护平台的初始概念是由平台创始人经过多次讨论而形成的，最终在2018年12月20日决定开始白衣守护平台的搭建。</p>
+													<div class="fuwu-a">
+														<a href="#">	
+															<p>阅读更多</p>
+														</a>
+													</div>
+									           </div>
+									        </div>
+										</div>
+									</p>
+	                            </div>
+
+
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+
+
+
+
+
+	<!--页脚-->
+	<div class="page-app">
+		<div class="footer" style="padding-top:20px;">
+			<div class="row">
+				<div class="col-md-9">
+					<h4>商务合作</h4>
+						<div class="row">
+							<div class="col-md-6">
+								<p>邮箱：1434591202@qq.com</p>
+							</div>
+							<div class="col-md-6">
+								<p>联系方式:15778702339</p>
+							</div>
+						</div>
+				</div>
+				<div class="col-md-3">
+					<h4>服务热线</h4>
+					<p style="font-size:30px;">54646465147</p>
+				</div>
+				<p style="margin-left:300px;">公司初始地址：广西省柳州市鱼峰区社弯路28号（柳州职业技术学院）</p>
+			</div>
+		</div>
+	</div>
+	
+	 
+
+		
+	
+	<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
